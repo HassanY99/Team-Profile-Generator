@@ -1,0 +1,54 @@
+body {
+    background: #333;
+    color: #fff;
+}
+
+header {
+    background: rgb(255, 151, 151);
+    margin: 0px;
+    border: 0px;
+}
+
+.cardHeader {
+    background: rgb(93, 149, 153);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.cardHeader:hover {
+    box-shadow: 2px 3px 12px rgb(255, 128, 128);
+    cursor: pointer;
+}
+
+.cardBody {
+    background: rgb(187, 178, 164);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.cardBody:hover {
+    box-shadow: 2px 3px 12px rgb(1, 247, 255);
+    cursor: pointer;
+}
+
+.cardTitle {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cardText {
+    color: rgb(134, 56, 0);
+}
+a {
+    color: rgb(0, 0, 0);
+}
