@@ -41,7 +41,7 @@ function addEmploys() {
             choices: ["Engineer", "Intern", "Manager"]
         },
     ])
-    .then(function ({ name, id, emaul, position}) {
+    .then(function ({ name, id, email, position }) {
         let empPosition = "";
         if (role === "Engineer") {
             empPosition = "Engineers Github"
@@ -55,8 +55,8 @@ function addEmploys() {
         .prompt([
             {
             type:"input",
-            name: "empPosition",
-            message: `What is the ${empPosition}`,
+            name: "empsPosition",
+            message: `What is the ${empPosition}?`,
             },
 
             {
@@ -66,16 +66,16 @@ function addEmploys() {
                 choices: ["Yes", "No"],
                 },
         ])
-        .then(function ({ empPosition, moreEmps}) {
+        .then(function ({ empsPosition, moreEmps}) {
             let newMember;
             if (role === "Engineer") {
-                newMember = new Engineer(name, id, email, empPosition);
+                newMember = new Engineer(name, id, email, empsPosition);
             } else if ( role === "Intern") {
-                newMember = new Intern(name, id, email, empPosition);
+                newMember = new Intern(name, id, email, empsPosition);
             } else {
-                newMember = new Manager(name, id, email, empPosition)
+                newMember = new Manager(name, id, email, empsPosition)
             }
-            emps.push(newMember);
+            employs.push(newMember);
             appendHTML(newMember).then(() => {
                 if (moreEmps === "Yes") {
                     addEmploys();
@@ -104,7 +104,7 @@ function startHTML() {
     <header>
         <h1 style="text-align: center;">Team</h1>
     </header>`;
-    fs.writeFile("./assets/dist/team-generator.html", starter, (err) => {
+    fs.writeFile("./assets/dist/team.html", starter, (err) => {
         if (err) console.log(err)
     });
 }
@@ -146,8 +146,8 @@ function appendHTML(newMember) {
                 <p class="cardText">Office number: ${officeNum1}</p>
             </div>`
         }
-        console.log("New team memebers being added..");
-        fs.appendFile("./assets/dist/team-generator.html", data, (err) => {
+        console.log("New team members being added..");
+        fs.appendFile("./assets/dist/team.html", data, (err) => {
             if (err) {
                 return reject(err);
             }
@@ -165,7 +165,7 @@ function endHTML() {
         
     </body>
     </html>`;
-    fs.appendFile("./assets/dist/team-generator.html", end, (err) => {
+    fs.appendFile("./assets/dist/team.html", end, (err) => {
         if (err) console.log(err);
     });
 }
