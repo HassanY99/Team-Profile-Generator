@@ -1,5 +1,4 @@
-const { it, expect } = require("@jest/globals")
-const Employee = require("./lib/Employee")
+const Employee = require("../lib/Employee")
 
 describe("Employee Information", () => {
     it("Should have name input", () => {
@@ -28,7 +27,7 @@ describe("Employee Information", () => {
 
     it("Should get id", () => {
         const id = 123;
-        const employ = new Employee("James", id);
+        const employ = new Employee("Cristiano", id);
         expect(employ.getId()).toEqual(id);
     });
 

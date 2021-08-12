@@ -10,7 +10,7 @@ describe("Github UserName", () => {
 describe("getPosition", () => {
     it("Should override to give Engineer", () => {
         const position = "Engineer";
-        const employ = new Engineer("Hassan", 123, "hassanyousuf1999@gmail.com", HassanY99);
+        const employ = new Engineer("Hassan", 123, "hassanyousuf1999@gmail.com", "HassanY99");
         expect(employ.getPosition()).toEqual(position);
     
     });
