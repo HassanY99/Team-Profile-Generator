@@ -1,17 +1,22 @@
 const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
-    it("Should have school input", () => {
-        const school = "2U University";
-        const employ = new Intern("Hassan", 123, "hassanyousuf1999@gmail.com", school);
-        expect(employ.school).toEqual(school);
-});
-
-describe("getPosition", () => {
-    it("Should override to give Intern", () => {
-        const position = "Intern";
-        const employ = new Intern("Hassan", 123, "hassanyousuf1999@gmail.com", "2U University");
-        expect(employ.getPosition()).toEqual(position);
-});
-});
+  // school
+  // // it should have a school input
+  it("should have a school input", () => {
+    const school = "2U";
+    const emp = new Intern("Hassan", 123, "Hassan@test.com", school);
+    // // expect school = school
+    expect(emp.school).toEqual(school);
+  });
+  describe("getRole", () => {
+    // getRole()
+    // // it should overridden to return intern
+    it("should overridden to return intern", () => {
+      const role = "Intern";
+      const emp = new Intern("Hassan", 123, "Hassan@test.com", "2U");
+      // // expect role = role
+      expect(emp.getRole()).toEqual(role);
+    });
+  });
 });

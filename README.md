@@ -64,7 +64,9 @@ THEN I exit the application, and the HTML is generated
 
   ## Tests
 
-  - [Full Video](https://drive.google.com/file/d/1V4bviF9hGPHMQkXHxPSF7POkYRNxS0rZ/view)
+  - [Full Video TEST PASSED](https://drive.google.com/file/d/1sJMngvELy6ox-JU0DwtNwny34_8d2q3l/view)
+  - [Full Video FINAL RESULTS](https://drive.google.com/file/d/167kWYDm6TUnIu4ko6RkcHZnDycjrCJcf/view)
+
   
 
   ## Acknowledgments

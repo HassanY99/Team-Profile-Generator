@@ -1,8 +1,12 @@
 {
-  "name": "team_profile_generator",
+  "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "Team Profile Generator",
+  "description": "## Team Profile Generator",
   "main": "index.js",
+  "devDependencies": {
+    "inquirer": "^8.1.2",
+    "jest": "^27.0.6"
+  },
   "scripts": {
     "test": "jest --watch"
   },
@@ -10,16 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/HassanY99/Team-Profile-Generator.git"
   },
-  "author": "Hassan Yusuf",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HassanY99/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/HassanY99/Team-Profile-Generator#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "inquirer": "^8.1.2",
-    "jest": "^27.0.6"
-  },
-  "keywords": []
+  "homepage": "https://github.com/HassanY99/Team-Profile-Generator#readme"
 }

@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./testStyle.css" />
     <title>Team Profile Generator</title>
-</head>
-<body>
-<header>
-    <h1 style="text-align: center;">Team</h1>
-</header>
-
-<main>
-    <div style="text-align: center;" class="cardHeader">Hassan Yusuf</div>
-    <div class="cardBody">
-        <h4 class="cardTitle">Engineer</h4>
-        <p class="cardText">ID: 1</p>
-        <p class="cardText">Email: <a href="mailto:test@ex.com">test@ex.com</a></p>
-        <p class="cardText">Github: <a href="https://github.com/userName">userName</a></p>
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-fluid drk">
+      <main class="container">
+        <h1 class="display-4">Team Profile Generator</h1>
+      </main>
+    </header>
+    <div class="container row">
+      <!-- Manager -->
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+        <div class="card-header">Hassan Yusuf</div>
+        <div class="card-body">
+          <h5 class="card-title">Manager</h5>
+          <p class="card-text">ID:1</p>
+          <p class="card-text">
+            Email: <a href="mailto:test@ex.com">Email</a>
+          </p>
+          <p class="card-text">Office Number:</p>
+        </div>
+      </div>
+      <!-- Engineer -->
+      <div class="card text-white bg-success mb-3" style="max-width: 18rem">
+        <div class="card-header">Hassan Yusuf</div>
+        <div class="card-body">
+          <h5 class="card-title">Engineer</h5>
+          <p class="card-text">ID: 2</p>
+          <p class="card-text">
+            Email: <a href="mailto:test@ex.com">Email</a>
+          </p>
+          <p class="card-text">
+            GitHub:
+            <a href="https://github.com/userName" target="_blank">userName</a>
+          </p>
+        </div>
+      </div>
+      <!-- Intern -->
+      <div class="card text-white bg-info mb-3" style="max-width: 18rem">
+        <div class="card-header">Hassan Yusuf</div>
+        <div class="card-body">
+          <h5 class="card-title">Intern</h5>
+          <p class="card-text">ID: 3</p>
+          <p class="card-text">
+            Email: <a href="mailto:test@ex.com">Email</a>
+          </p>
+          <p class="card-text">School:</p>
+        </div>
+      </div>
+      <!-- End -->
     </div>
-
-    <div style="text-align: center;" class="cardHeader">Kinza Bibi</div>
-    <div class="cardBody">
-        <h4 class="cardTitle">Manager</h4>
-        <p class="cardText">ID: 2</p>
-        <p class="cardText">Email: <a href="mailto:test@ex.com">test@ex.com</a></p>
-        <p class="cardText">Office number:</p>
-    </div>
-
-    <div style="text-align: center;" class="cardHeader">David Messi</div>
-    <div class="cardBody">
-        <h4 class="cardTitle">Intern</h4>
-        <p class="cardText">ID: 3</p>
-        <p class="cardText">Email: <a href="mailto:test@ex.com">test@ex.com</a></p>
-        <p class="cardText">School: </p>
-    </div>
-
-    <div style="text-align: center;" class="cardHeader">Cristiano Pepe</div>
-    <div class="cardBody">
-        <h4 class="cardTitle">Employee</h4>
-        <p class="cardText">ID: 4</p>
-        <p class="cardText">Email: <a href="mailto:test@ex.com">test@ex.com</a></p>
-        <p class="cardText">School:</p>
-    </div>
-</main>
-    
-</body>
+  </body>
 </html>
